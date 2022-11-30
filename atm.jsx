@@ -67,7 +67,6 @@ const Account = () => {
     //console.log(event.target.value);
     setAtmMode(event.target.value);
     setValidTransaction(false);
-
     if (event.target.value === "Deposit") {
       setIsDeposit(true);
     } else {
