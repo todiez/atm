@@ -1,0 +1,31 @@
+label {
+  padding-top: 20px;
+}
+
+select {
+  display: block;
+  padding: 5px;
+}
+
+.atm {
+  padding: 30px;
+  width: 600px;
+  height: auto;
+  margin: 50px auto;
+  border-radius: 12px;
+  background-color: #0c7ff363;
+  border-style: outset;
+}
+
+h1 {
+  padding: 15px;
+  font-weight: bold;
+  background-color: #0c7ff363;
+  text-align: center;
+  border-radius: 12px;
+  border-style:groove;
+}
+
+#total {
+  padding-top: 30px;
+}
