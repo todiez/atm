@@ -19,6 +19,7 @@ const ATMDeposit = ({ onChange, isDeposit, isValid }) => {
       ></input>
     </label>
   );
+  
 };
 
 const Account = () => {
