@@ -33,6 +33,7 @@ const Account = () => {
 
   const handleChange = (event) => {
     let val = Number(event.target.value);
+    //console.log(val);
     setDeposit(val);
 
     //console.log(`handleChange ${event.target.value}`);
@@ -51,9 +52,9 @@ const Account = () => {
 
   const handleSubmit = (event) => {
     let newTotal = isDeposit ? totalState + deposit : totalState - deposit;
+    //console.log(newTotal);
     setTotalState(newTotal);
-    setValidTransaction(false);
-    
+    setValidTransaction(false);   
     event.preventDefault();
   };
 
@@ -73,7 +74,6 @@ const Account = () => {
     <div className="atm">
       <h1>Best ATM ever!</h1>
       <form onSubmit={handleSubmit}>
-        
         <label>Select an option below to continue</label>
         <select
           onChange={(e) => handleModeSelect(e)}
