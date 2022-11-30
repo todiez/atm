@@ -54,7 +54,12 @@ const Account = () => {
     let newTotal = isDeposit ? totalState + deposit : totalState - deposit;
     //console.log(newTotal);
     setTotalState(newTotal);
-    setValidTransaction(false);   
+    setValidTransaction(false); 
+    
+    if (atmMode === "Deposit") {
+      setValidTransaction(true);
+    } 
+    
     event.preventDefault();
   };
 
