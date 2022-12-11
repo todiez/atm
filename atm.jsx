@@ -21,6 +21,7 @@ const ATMDeposit = ({ onChange, isDeposit, isValid }) => {
   );
 };
 
+
 const Account = () => {
   const [deposit, setDeposit] = React.useState(0);
   const [totalState, setTotalState] = React.useState(0);
